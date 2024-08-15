@@ -39,6 +39,7 @@
         }
 
         h1, p {
+	    font-size: 3vw;
             display: inline;
             white-space: nowrap;
             overflow: hidden;
@@ -54,9 +55,9 @@
 	.intro-box {
             display: inline-block;
             border: 2px solid #000;
-            padding: 20px;
+            padding: 20uw;
             text-align: left;
-            margin: 20px auto;
+            margin: 20vh auto;
             text-align: left;
             width: 70%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -79,7 +80,10 @@
         .intro-box a:hover {
             text-decoration: underline;
         }
-
+        @media (max-width: 768px) {
+    h1, p {
+        font-size: 5vw;
+    }
         @keyframes typing {
             from { width: 0; }
             to { width: 100%; }
@@ -137,7 +141,7 @@
             color: black;
             width: 250px;
             height: 150px;
-            margin: 20px;
+            margin: 10px 0;
             perspective: 1000px;
         }
 
@@ -206,13 +210,14 @@
           .about-content {
             display: flex;
             justify-content: space-between;
-            align-items: left;
+            align-items: center;
             flex-wrap: wrap;
         }
 
         .about-text {
             flex: 1;
             min-width: 300px;
+	    font-size: 1.5vw;
         }
 
         .about-photo {
